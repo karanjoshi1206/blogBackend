@@ -78,26 +78,42 @@ exports.getAllBlogs = async (req, res) => {
         console.log(JSON.parse(queryStr))
         let query = Blog.find(JSON.parse(queryStr))
 
-      
+
         // 2) SORTING
         if (req.query.sort) {
             let sortQuery = req.query.sort.split(",").join(" ")
-            console.log("==>> ",sortQuery)
+            console.log("==>> ", sortQuery)
             query = query.sort(sortQuery)
-
         }
-        else{
+        else {
             query = query.sort("-createdAt")
         }
 
         // 3) Field limiting
-        if(req.query.fields){
+        if (req.query.fields) {
             const fields = req.query.fields.split(',').join(' ');
             query = query.select(fields)
         }
-        else{
+        else {
             query = query.select("-__v")
         }
+
+        // 4) PAGINATION
+        const page = req.query.page * 1 || 1;
+        const limit = req.query.limit * 1 || 100;
+        const skip = (page - 1) * limit;
+        query = query.skip(skip).limit(limit)
+
+        // handle if page crosses the amount of data....means after last page
+        if(req.query.page){
+            const numOfBlogs = await Blog.countDocuments();
+            console.log("num of blogs ",numOfBlogs,skip)
+            if(skip > numOfBlogs){
+                throw new Error("Page does not exists....")
+            }
+        }
+
+
 
         const blogs = await query;
         res.status(200).json({
@@ -108,12 +124,12 @@ exports.getAllBlogs = async (req, res) => {
 
     } catch (error) {
 
-        console.log("error is ",error)
+        console.log("error is ", error)
         res.status(500).json({
             status: false,
             message: error
         })
-    } 
+    }
 }
 
 exports.deleteBlog = async (req, res) => {
