@@ -1,0 +1,100 @@
+[
+    {
+        "title": "The Benefits of Yoga",
+        "description": "Learn about the many physical and mental benefits of practicing yoga.",
+        "image": "https://www.example.com/yoga.jpg",
+        "user": {
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "role": "author"
+        },
+        "likeCount": 12,
+        "category": "Fitness",
+        "createdAt": "2023-05-04T10:00:00.000Z",
+        "author": "Jane Smith"
+    },
+    {
+        "title": "How to Cook the Perfect Steak",
+        "description": "Get expert tips on how to cook a delicious steak that will impress your guests.",
+        "image": "https://www.example.com/steak.jpg",
+        "user": {
+            "name": "Sarah Johnson",
+            "email": "sarahj@example.com",
+            "role": "editor"
+        },
+        "likeCount": 7,
+        "category": "Food",
+        "createdAt": "2023-05-02T15:30:00.000Z",
+        "author": "Mike Williams"
+    },
+    {
+        "title": "10 Tips for Better Sleep",
+        "description": "Get the restful sleep you need with these simple tips and tricks.",
+        "image": "https://www.example.com/sleep.jpg",
+        "user": {
+            "name": "David Lee",
+            "email": "davidl@example.com",
+            "role": "author"
+        },
+        "likeCount": 22,
+        "category": "Health",
+        "createdAt": "2023-04-30T08:45:00.000Z",
+        "author": "Emily Chen"
+    },
+    {
+        "title": "The History of Jazz Music",
+        "description": "Discover the origins and evolution of one of America's most beloved music genres.",
+        "image": "https://www.example.com/jazz.jpg",
+        "user": {
+            "name": "Mark Jones",
+            "email": "markj@example.com",
+            "role": "editor"
+        },
+        "likeCount": 15,
+        "category": "Music",
+        "createdAt": "2023-04-28T12:15:00.000Z",
+        "author": "Anthony Davis"
+    },
+    {
+        "title": "The Benefits of Meditation",
+        "description": "Learn how meditation can reduce stress and improve your overall well-being.",
+        "image": "https://www.example.com/meditation.jpg",
+        "user": {
+            "name": "Linda Brown",
+            "email": "lindab@example.com",
+            "role": "author"
+        },
+        "likeCount": 8,
+        "category": "Health",
+        "createdAt": "2023-04-25T17:00:00.000Z",
+        "author": "John Kim"
+    },
+    {
+        "title": "5 Must-See Places in Paris",
+        "description": "Discover the top attractions in the City of Light with our comprehensive guide.",
+        "image": "https://www.example.com/paris.jpg",
+        "user": {
+            "name": "Amy Chen",
+            "email": "amyc@example.com",
+            "role": "editor"
+        },
+        "likeCount": 10,
+        "category": "Travel",
+        "createdAt": "2023-04-23T09:30:00.000Z",
+        "author": "Paul Thompson"
+    },
+    {
+        "title": "The Benefits of Green Tea",
+        "description": "Learn how green tea can boost your metabolism, reduce inflammation, and more.",
+        "image": "https://www.example.com/greentea.jpg",
+        "user": {
+            "name": "Amy Chen",
+            "email": "amyc@example.com",
+            "role": "editor"
+        },
+        "likeCount": 10,
+        "category": "Travel",
+        "createdAt": "2023-04-23T09:30:00.000Z",
+        "author": "Paul Thompson"
+    }
+]
