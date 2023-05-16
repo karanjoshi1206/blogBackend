@@ -8,6 +8,7 @@ const DB = process.env.DATABASE.replace("<PASSWORD>", process.env.DATABASE_PASSW
 
 
 mongoose.connect(DB).then(con => {
+    console.log("DB is ",DB)
     app.listen(port, () => {
         console.log("app is running on ", port)
     })
